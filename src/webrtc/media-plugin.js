@@ -36,7 +36,7 @@ MediaPlugin.prototype.createPeerConnection = function(options) {
     iceServers: [],
     iceTransportPolicy: 'all',
     bundlePolicy: 'max-bundle',
-    sdpSemantics = 'unified-plan'
+    sdpSemantics: 'unified-plan'
   };
   var constraints = {
     'optional': [{'DtlsSrtpKeyAgreement': true}]
