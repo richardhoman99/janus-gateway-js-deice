@@ -1,13 +1,13 @@
 {
-  "name": "janus-gateway-js",
-  "description": "Core concepts for Janus javascript client",
+  "name": "janus-gateway-js-deice",
+  "description": "Core concepts for Janus javascript client. Remove ICE servers.",
   "version": "2.0.2",
   "author": "Cargomedia",
   "license": "MIT",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:cargomedia/janus-gateway-js.git"
+    "url": "git@github.com:richardhoman99/janus-gateway-js-deice.git"
   },
   "scripts": {
     "build": "npm install && $(npm bin)/gulp",
