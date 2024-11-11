@@ -33,7 +33,10 @@ MediaPlugin.prototype.createPeerConnection = function(options) {
   options = Helpers.extend(options || {}, this._session._connection._options.pc);
 
   var config = {
-    iceServers: []
+    iceServers: [],
+    iceTransportPolicy: 'all',
+    bundlePolicy: 'max-bundle',
+    sdpSemantics = 'unified-plan'
   };
   var constraints = {
     'optional': [{'DtlsSrtpKeyAgreement': true}]
