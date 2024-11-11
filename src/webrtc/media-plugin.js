@@ -45,6 +45,7 @@ MediaPlugin.prototype.createPeerConnection = function(options) {
     Helpers.extend(constraints, options.constraints);
   }
 
+  console.log('Created PeerConnection without ICE servers');
   this._pc = new webrtcsupport.PeerConnection(config, constraints);
   this._addPcEventListeners();
   return this._pc;
